@@ -7,11 +7,11 @@ This project deploys a **MySQL database with persistent storage** on a real Kube
 
 ## Project Structure
  ``` 
- ├── mysql-secret.yaml # Secure MySQL root password
- ├── mysql-pvc.yaml # PersistentVolumeClaim (uses StorageClass)
- ├── mysql-statefulset.yaml # MySQL StatefulSet
- ├── mysql-service.yaml # MySQL service
- ├── init-db-configmap.yaml # SQL file for DB + table + data
- ├── phpmyadmin-deployment.yaml # Web-based MySQL UI
+ ├── mysql-secret.yaml           # Secure MySQL root password
+ ├── mysql-pvc.yaml              # PersistentVolumeClaim (uses StorageClass)
+ ├── mysql-statefulset.yaml      # MySQL StatefulSet
+ ├── mysql-service.yaml          # MySQL service
+ ├── init-db-configmap.yaml      # SQL file for DB + table + data
+ ├── phpmyadmin-deployment.yaml  # Web-based MySQL UI
  
   ``` 
