@@ -23,3 +23,13 @@ This project deploys a **MySQL database with persistent storage** on a real Kube
 * [mysql-service.yaml](mysql-service.yaml)         
 * [mysql-statefulset.yaml](mysql-statefulset.yaml)      
 * [phpmyadmin-deployment.yaml](phpmyadmin-deployment.yaml) 
+## Apply the yaml files in order:
+```
+kubectl apply -f mysql-secret.yaml
+kubectl apply -f mysql-pv.yaml
+kubectl apply -f mysql-pvc.yaml
+kubectl apply -f init-db-configmap.yaml
+kubectl apply -f mysql-service.yaml
+kubectl apply -f mysql-statefulset.yaml
+kubectl apply -f phpmyadmin-deployment.yaml
+```
