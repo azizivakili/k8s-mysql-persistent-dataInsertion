@@ -57,5 +57,5 @@ statefulset.apps/mysql   1/1     22h
 See the cluster also in K9S:
 ![k99](k9s.png)
 ## Open Phpmyadmin page to check Mysql connectivity and Tables!
-![Phpmyadmin pod is connected to Mysql pod!]()
+![Phpmyadmin pod is connected to Mysql pod!](Access-DB-from-Phpmyadmin.png)
 
