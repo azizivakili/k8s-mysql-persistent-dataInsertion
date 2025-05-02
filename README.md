@@ -33,3 +33,25 @@ kubectl apply -f mysql-service.yaml
 kubectl apply -f mysql-statefulset.yaml
 kubectl apply -f phpmyadmin-deployment.yaml
 ```
+## Check if all running:
+```
+azizivakili@kubernetes:~$ kubectl get all
+NAME                              READY   STATUS    RESTARTS      AGE
+pod/mysql-0                       1/1     Running   1 (22h ago)   22h
+pod/phpmyadmin-5ddb687887-xblhm   1/1     Running   1 (22h ago)   22h
+
+NAME                 TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+service/kubernetes   ClusterIP      10.96.0.1       <none>        443/TCP        13d
+service/mysql        ClusterIP      None            <none>        3306/TCP       22h
+service/phpmyadmin   LoadBalancer   10.108.245.53   <pending>     80:31360/TCP   22h
+
+NAME                         READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/phpmyadmin   1/1     1            1           22h
+
+NAME                                    DESIRED   CURRENT   READY   AGE
+replicaset.apps/phpmyadmin-5ddb687887   1         1         1       22h
+
+NAME                     READY   AGE
+statefulset.apps/mysql   1/1     22h
+```
+
