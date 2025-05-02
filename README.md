@@ -54,4 +54,6 @@ replicaset.apps/phpmyadmin-5ddb687887   1         1         1       22h
 NAME                     READY   AGE
 statefulset.apps/mysql   1/1     22h
 ```
+See the cluster also in K9S:
+![k99](k9s.png)
 
