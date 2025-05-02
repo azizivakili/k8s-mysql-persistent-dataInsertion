@@ -15,3 +15,11 @@ This project deploys a **MySQL database with persistent storage** on a real Kube
 ├── mysql-statefulset.yaml            # MySQL StatefulSet    
 └── phpmyadmin-deployment.yaml        # Web-based MySQL UI
 ``` 
+## Below are given files:
+* init-db-configmap.yaml     
+* mysql-pvc.yaml              
+* mysql-pv.yaml               
+* mysql-secret.yaml          
+* mysql-service.yaml         
+* mysql-statefulset.yaml      
+* phpmyadmin-deployment.yaml 
