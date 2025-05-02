@@ -16,7 +16,7 @@ This project deploys a **MySQL database with persistent storage** on a real Kube
 └── phpmyadmin-deployment.yaml        # Web-based MySQL UI
 ``` 
 ## Below are given files:
-* init-db-configmap.yaml     
+* init-db-configmap.yaml (init-db-configmap.yaml)     
 * mysql-pvc.yaml              
 * mysql-pv.yaml               
 * mysql-secret.yaml          
